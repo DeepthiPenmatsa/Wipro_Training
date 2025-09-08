@@ -15,87 +15,52 @@ public class RegExcel {
 
     String excelPath = "C:\\Users\\deept\\OneDrive\\Desktop\\velocity.xlsx";
 
-    // Test data fields to share data between tests
-    String firstName, lastName, emailInput, passwordInput, confirmPassword;
-
-    @BeforeClass
-    public void setUpClass() {
+    @BeforeMethod
+    public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         driver.get("https://demo.bagisto.com/bagisto-common/");
     }
 
+    // ---------------- DATA PROVIDERS ----------------
     @DataProvider(name = "signupData")
     public Object[][] getSignupData() {
         return ExcelUtils.getSheetData(excelPath, "Sheet1");
     }
 
-    // 1. Click Users Icon
+    @DataProvider(name = "loginData")
+    public Object[][] getLoginData() {
+        return ExcelUtils.getSheetData(excelPath, "Sheet2");
+    }
+
+    // ---------------- SIGNUP TEST ----------------
     @Test(dataProvider = "signupData", priority = 1)
-    public void clickUsersIcon(String fn, String ln, String email, String pw, String cpw) {
-        this.firstName = fn;
-        this.lastName = ln;
-        this.emailInput = email;
-        this.passwordInput = pw;
-        this.confirmPassword = cpw;
+    public void signupTest(String firstName, String lastName, String emailInput, String passwordInput, String confirmPassword) {
+        try {
+            clickElement(By.cssSelector("span.icon-users"));
+            clickElement(By.xpath("//a[contains(text(),'Sign Up')]"));
 
-        clickElement(By.cssSelector("span.icon-users"));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("first_name")));
+            driver.findElement(By.name("first_name")).sendKeys(firstName);
+            driver.findElement(By.name("last_name")).sendKeys(lastName);
+            driver.findElement(By.name("email")).sendKeys(emailInput);
+            driver.findElement(By.name("password")).sendKeys(passwordInput);
+            driver.findElement(By.name("password_confirmation")).sendKeys(confirmPassword);
+
+            jsClick(driver.findElement(By.id("agreement")));
+            clickElement(By.cssSelector("button[type='submit'].primary-button"));
+
+            sleep(3000);
+            System.out.println("✅ User registered: " + emailInput);
+
+        } catch (Exception e) {
+            System.out.println("❌ Signup failed for: " + emailInput);
+            e.printStackTrace();
+        }
     }
 
-    // 2. Click Sign Up link
-    @Test(priority = 2, dependsOnMethods = "clickUsersIcon")
-    public void clickSignUpLink() {
-        clickElement(By.xpath("//a[contains(text(),'Sign Up')]"));
-    }
-
-    // 3. Enter First Name
-    @Test(priority = 3, dependsOnMethods = "clickSignUpLink")
-    public void enterFirstName() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("first_name")));
-        driver.findElement(By.name("first_name")).sendKeys(firstName);
-    }
-
-    // 4. Enter Last Name
-    @Test(priority = 4, dependsOnMethods = "enterFirstName")
-    public void enterLastName() {
-        driver.findElement(By.name("last_name")).sendKeys(lastName);
-    }
-
-    // 5. Enter Email
-    @Test(priority = 5, dependsOnMethods = "enterLastName")
-    public void enterEmail() {
-        driver.findElement(By.name("email")).sendKeys(emailInput);
-    }
-
-    // 6. Enter Password
-    @Test(priority = 6, dependsOnMethods = "enterEmail")
-    public void enterPassword() {
-        driver.findElement(By.name("password")).sendKeys(passwordInput);
-    }
-
-    // 7. Enter Confirm Password
-    @Test(priority = 7, dependsOnMethods = "enterPassword")
-    public void enterConfirmPassword() {
-        driver.findElement(By.name("password_confirmation")).sendKeys(confirmPassword);
-    }
-
-    // 8. Click Agreement checkbox
-    @Test(priority = 8, dependsOnMethods = "enterConfirmPassword")
-    public void clickAgreement() {
-        jsClick(driver.findElement(By.id("agreement")));
-    }
-
-    // 9. Click Submit button
-    @Test(priority = 9, dependsOnMethods = "clickAgreement")
-    public void clickSubmit() {
-        clickElement(By.cssSelector("button[type='submit'].primary-button"));
-        System.out.println("✅ User registered: " + emailInput);
-        sleep(3000);
-    }
-
-    // Helper methods
-
+  
     private void clickElement(By by) {
         WebElement el = wait.until(ExpectedConditions.elementToBeClickable(by));
         el.click();
@@ -108,14 +73,11 @@ public class RegExcel {
     }
 
     private void sleep(long ms) {
-        try {
-            Thread.sleep(ms);
-        } catch (InterruptedException ignored) {
-        }
+        try { Thread.sleep(ms); } catch (InterruptedException ignored) {}
     }
 
-    @AfterClass
-    public void tearDownClass() {
+    @AfterMethod
+    public void tearDown() {
         if (driver != null) driver.quit();
     }
 }

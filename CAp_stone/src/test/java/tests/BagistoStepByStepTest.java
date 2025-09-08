@@ -1,17 +1,10 @@
-
 package tests;
 
-import tests.BaseTest;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.interactions.Actions;
+import base.BaseTest;
 import org.testng.annotations.Test;
 import pages.*;
 
-import java.util.ArrayList;
-
 public class BagistoStepByStepTest extends BaseTest {
-
     LoginPage loginPage;
     DashboardPage dashboard;
     CustomersPage customers;
@@ -134,7 +127,7 @@ public class BagistoStepByStepTest extends BaseTest {
 
     @Test(priority = 23, dependsOnMethods = "enterLastName")
     public void enterCustomerEmail() {
-        customers.enterCustomerEmail("rocky12@test.com");
+        customers.enterCustomerEmail("rocky128@test.com");
     }
 
     @Test(priority = 24, dependsOnMethods = "enterCustomerEmail")
@@ -216,7 +209,6 @@ public class BagistoStepByStepTest extends BaseTest {
     private void sleep(long ms) {
         try {
             Thread.sleep(ms);
-        } catch (InterruptedException ignored) {
-        }
+        } catch (InterruptedException ignored) {}
     }
 }

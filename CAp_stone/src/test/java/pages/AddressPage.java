@@ -23,7 +23,7 @@ public class AddressPage {
     By cityInput = By.name("city");
     By postcodeInput = By.name("postcode");
     By phoneInput = By.name("phone");
-    By saveBtn = By.xpath("//button[contains(text(),'Save')]");
+    By saveBtn = By.xpath("//button[contains(text(),'Saves')]");
 
     public AddressPage(WebDriver driver,WebDriverWait wait){
         this.driver = driver;

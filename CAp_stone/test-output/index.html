@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">48 methods,   48 passed</span>
+                    <span class="method-stats">40 methods, 1 failed,   39 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.BagistoStepByStepTest" class="method navigator-link" hash-for-method="clickSaveAddressBtn">clickSaveAddressBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,11 +128,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.BagistoStepByStepTest" class="method navigator-link" hash-for-method="clickAgreeBtn">clickAgreeBtn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="clickAgreement">clickAgreement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,39 +162,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.BagistoStepByStepTest" class="method navigator-link" hash-for-method="clickSaveAddressBtn">clickSaveAddressBtn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.BagistoStepByStepTest" class="method navigator-link" hash-for-method="clickSaveCustomerBtn">clickSaveCustomerBtn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.BagistoStepByStepTest" class="method navigator-link" hash-for-method="clickSignIn">clickSignIn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="clickSignUpLink">clickSignUpLink</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="clickSubmit">clickSubmit</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="clickUsersIcon(bob, 
-Doe, bobby13@example.com , bob123, bob123)">clickUsersIcon(bob, 
-Doe, bobby13@example.com , bob123, bob123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="clickUsersIcon(Alie, dom, Alie1@example.com, alie123, alie123)">clickUsersIcon(Alie, dom, Alie1@example.com, alie123, alie123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -220,11 +202,6 @@ Doe, bobby13@example.com , bob123, bob123)</a> <!-- method navigator-link -->
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="enterConfirmPassword">enterConfirmPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.BagistoStepByStepTest" class="method navigator-link" hash-for-method="enterCustomerEmail">enterCustomerEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -235,32 +212,12 @@ Doe, bobby13@example.com , bob123, bob123)</a> <!-- method navigator-link -->
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="enterEmail">enterEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="enterFirstName">enterFirstName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.BagistoStepByStepTest" class="method navigator-link" hash-for-method="enterFirstName">enterFirstName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="enterLastName">enterLastName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.BagistoStepByStepTest" class="method navigator-link" hash-for-method="enterLastName">enterLastName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="enterPassword">enterPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -330,6 +287,18 @@ Doe, bobby13@example.com , bob123, bob123)</a> <!-- method navigator-link -->
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="signupTest(Alie, dom, Alie1@example.com, alie123, alie123)">signupTest(Alie, dom, Alie1@example.com, alie123, alie123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegExcel" class="method navigator-link" hash-for-method="signupTest(bob, 
+Doe, bobby13@example.com , bob123, bob123)">signupTest(bob, 
+Doe, bobby13@example.com , bob123, bob123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.BagistoStepByStepTest" class="method navigator-link" hash-for-method="waitForAgreeBtn">waitForAgreeBtn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -355,6 +324,34 @@ Doe, bobby13@example.com , bob123, bob123)</a> <!-- method navigator-link -->
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.BagistoStepByStepTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickSaveAddressBtn">
+                  </a> <!-- clickSaveAddressBtn -->
+                  <span class="method-name">clickSaveAddressBtn</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(text(),&apos;Saves&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\deept\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63749}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63749/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27658fa60fc3465826f7873d0e614d4c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.AddressPage.clickSaveBtn(AddressPage.java:117)
+	at tests.BagistoStepByStepTest.clickSaveAddressBtn(BagistoStepByStepTest.java:206)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -422,13 +419,6 @@ Doe, bobby13@example.com , bob123, bob123)</a> <!-- method navigator-link -->
                   <a name="clickNewCustomerLogin">
                   </a> <!-- clickNewCustomerLogin -->
                   <span class="method-name">clickNewCustomerLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickSaveAddressBtn">
-                  </a> <!-- clickSaveAddressBtn -->
-                  <span class="method-name">clickSaveAddressBtn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -637,77 +627,21 @@ Doe, bobby13@example.com , bob123, bob123)</a> <!-- method navigator-link -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickAgreement">
-                  </a> <!-- clickAgreement -->
-                  <span class="method-name">clickAgreement</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickSignUpLink">
-                  </a> <!-- clickSignUpLink -->
-                  <span class="method-name">clickSignUpLink</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickSubmit">
-                  </a> <!-- clickSubmit -->
-                  <span class="method-name">clickSubmit</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickUsersIcon(bob, 
-Doe, bobby13@example.com , bob123, bob123)">
-                  </a> <!-- clickUsersIcon(bob, 
-Doe, bobby13@example.com , bob123, bob123) -->
-                  <span class="method-name">clickUsersIcon</span>
-                  <span class="parameters">(bob,
-Doe,bobby13@example.com ,bob123,bob123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickUsersIcon(Alie, dom, Alie1@example.com, alie123, alie123)">
-                  </a> <!-- clickUsersIcon(Alie, dom, Alie1@example.com, alie123, alie123) -->
-                  <span class="method-name">clickUsersIcon</span>
+                  <a name="signupTest(Alie, dom, Alie1@example.com, alie123, alie123)">
+                  </a> <!-- signupTest(Alie, dom, Alie1@example.com, alie123, alie123) -->
+                  <span class="method-name">signupTest</span>
                   <span class="parameters">(Alie,dom,Alie1@example.com,alie123,alie123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="enterConfirmPassword">
-                  </a> <!-- enterConfirmPassword -->
-                  <span class="method-name">enterConfirmPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterEmail">
-                  </a> <!-- enterEmail -->
-                  <span class="method-name">enterEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterFirstName">
-                  </a> <!-- enterFirstName -->
-                  <span class="method-name">enterFirstName</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterLastName">
-                  </a> <!-- enterLastName -->
-                  <span class="method-name">enterLastName</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterPassword">
-                  </a> <!-- enterPassword -->
-                  <span class="method-name">enterPassword</span>
+                  <a name="signupTest(bob, 
+Doe, bobby13@example.com , bob123, bob123)">
+                  </a> <!-- signupTest(bob, 
+Doe, bobby13@example.com , bob123, bob123) -->
+                  <span class="method-name">signupTest</span>
+                  <span class="parameters">(bob,
+Doe,bobby13@example.com ,bob123,bob123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -726,8 +660,6 @@ Doe,bobby13@example.com ,bob123,bob123)</span>
     &lt;classes&gt;
       &lt;class name=&quot;tests.BagistoStepByStepTest&quot;/&gt;
       &lt;class name=&quot;tests.RegExcel&quot;/&gt;
-      &lt;class name=&quot;tests.ExtentReportListener&quot;/&gt;
-      &lt;class name=&quot;tests.BaseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -741,7 +673,7 @@ Doe,bobby13@example.com ,bob123,bob123)</span>
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -767,204 +699,172 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(48);
+data.addRows(40);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickSignUpLink')
-data.setCell(0, 2, 'tests.RegExcel')
-data.setCell(0, 3, 11688);
+data.setCell(0, 1, 'clickSaveAddressBtn')
+data.setCell(0, 2, 'tests.BagistoStepByStepTest')
+data.setCell(0, 3, 15016);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickSubmit')
+data.setCell(1, 1, 'signupTest')
 data.setCell(1, 2, 'tests.RegExcel')
-data.setCell(1, 3, 5968);
+data.setCell(1, 3, 10133);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickAddress')
-data.setCell(2, 2, 'tests.BagistoStepByStepTest')
-data.setCell(2, 3, 4233);
+data.setCell(2, 1, 'signupTest')
+data.setCell(2, 2, 'tests.RegExcel')
+data.setCell(2, 3, 9393);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickSaveCustomerBtn')
+data.setCell(3, 1, 'clickAddress')
 data.setCell(3, 2, 'tests.BagistoStepByStepTest')
-data.setCell(3, 3, 4105);
+data.setCell(3, 3, 4182);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchCustomer')
+data.setCell(4, 1, 'clickSaveCustomerBtn')
 data.setCell(4, 2, 'tests.BagistoStepByStepTest')
-data.setCell(4, 3, 3111);
+data.setCell(4, 3, 4116);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'clickFirstSearchResult')
+data.setCell(5, 1, 'searchCustomer')
 data.setCell(5, 2, 'tests.BagistoStepByStepTest')
-data.setCell(5, 3, 2340);
+data.setCell(5, 3, 3114);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'enableDarkMode')
+data.setCell(6, 1, 'clickSignIn')
 data.setCell(6, 2, 'tests.BagistoStepByStepTest')
-data.setCell(6, 3, 2315);
+data.setCell(6, 3, 2552);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'clickSaveAddressBtn')
+data.setCell(7, 1, 'clickFirstSearchResult')
 data.setCell(7, 2, 'tests.BagistoStepByStepTest')
-data.setCell(7, 3, 2262);
+data.setCell(7, 3, 2362);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'openAdminPanel')
+data.setCell(8, 1, 'clickAgreeBtn')
 data.setCell(8, 2, 'tests.BagistoStepByStepTest')
-data.setCell(8, 3, 2223);
+data.setCell(8, 3, 2180);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'clickViewAllNotifications')
 data.setCell(9, 2, 'tests.BagistoStepByStepTest')
-data.setCell(9, 3, 2190);
+data.setCell(9, 3, 2080);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'clickAgreeBtn')
+data.setCell(10, 1, 'clickAddAddressBtn')
 data.setCell(10, 2, 'tests.BagistoStepByStepTest')
-data.setCell(10, 3, 2127);
+data.setCell(10, 3, 1974);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'clickAddAddressBtn')
+data.setCell(11, 1, 'openAdminPanel')
 data.setCell(11, 2, 'tests.BagistoStepByStepTest')
-data.setCell(11, 3, 1939);
+data.setCell(11, 3, 1845);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'clickCustomersSubMenu')
 data.setCell(12, 2, 'tests.BagistoStepByStepTest')
-data.setCell(12, 3, 1755);
+data.setCell(12, 3, 1754);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'goToCustomersMenu')
 data.setCell(13, 2, 'tests.BagistoStepByStepTest')
-data.setCell(13, 3, 1743);
+data.setCell(13, 3, 1739);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'clickUsersIcon')
-data.setCell(14, 2, 'tests.RegExcel')
-data.setCell(14, 3, 1105);
+data.setCell(14, 1, 'enterFirstName')
+data.setCell(14, 2, 'tests.BagistoStepByStepTest')
+data.setCell(14, 3, 612);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'clickUsersIcon')
-data.setCell(15, 2, 'tests.RegExcel')
-data.setCell(15, 3, 1089);
+data.setCell(15, 1, 'waitForAgreeBtn')
+data.setCell(15, 2, 'tests.BagistoStepByStepTest')
+data.setCell(15, 3, 567);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'enterFirstName')
+data.setCell(16, 1, 'openNotifications')
 data.setCell(16, 2, 'tests.BagistoStepByStepTest')
-data.setCell(16, 3, 624);
+data.setCell(16, 3, 151);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'waitForAgreeBtn')
+data.setCell(17, 1, 'enterEmail')
 data.setCell(17, 2, 'tests.BagistoStepByStepTest')
-data.setCell(17, 3, 560);
+data.setCell(17, 3, 146);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'clickAgreement')
-data.setCell(18, 2, 'tests.RegExcel')
-data.setCell(18, 3, 522);
+data.setCell(18, 1, 'selectCountry')
+data.setCell(18, 2, 'tests.BagistoStepByStepTest')
+data.setCell(18, 3, 135);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'enterFirstName')
-data.setCell(19, 2, 'tests.RegExcel')
-data.setCell(19, 3, 235);
+data.setCell(19, 1, 'clickDeleteIcon')
+data.setCell(19, 2, 'tests.BagistoStepByStepTest')
+data.setCell(19, 3, 132);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'enterEmail')
+data.setCell(20, 1, 'selectGender')
 data.setCell(20, 2, 'tests.BagistoStepByStepTest')
-data.setCell(20, 3, 162);
+data.setCell(20, 3, 131);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'openNotifications')
+data.setCell(21, 1, 'selectToday')
 data.setCell(21, 2, 'tests.BagistoStepByStepTest')
-data.setCell(21, 3, 149);
+data.setCell(21, 3, 130);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'clickNewCustomerLogin')
+data.setCell(22, 1, 'clickCreateCustomerBtn')
 data.setCell(22, 2, 'tests.BagistoStepByStepTest')
-data.setCell(22, 3, 147);
+data.setCell(22, 3, 126);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'selectCountry')
+data.setCell(23, 1, 'enterAddressEmail')
 data.setCell(23, 2, 'tests.BagistoStepByStepTest')
-data.setCell(23, 3, 129);
+data.setCell(23, 3, 121);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'selectGender')
+data.setCell(24, 1, 'clickNewCustomerLogin')
 data.setCell(24, 2, 'tests.BagistoStepByStepTest')
-data.setCell(24, 3, 125);
+data.setCell(24, 3, 121);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'selectToday')
+data.setCell(25, 1, 'enterPassword')
 data.setCell(25, 2, 'tests.BagistoStepByStepTest')
-data.setCell(25, 3, 122);
+data.setCell(25, 3, 119);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'clickCreateCustomerBtn')
+data.setCell(26, 1, 'enterStreetAddress')
 data.setCell(26, 2, 'tests.BagistoStepByStepTest')
-data.setCell(26, 3, 122);
+data.setCell(26, 3, 119);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'clickDeleteIcon')
+data.setCell(27, 1, 'enableDarkMode')
 data.setCell(27, 2, 'tests.BagistoStepByStepTest')
-data.setCell(27, 3, 121);
+data.setCell(27, 3, 118);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'enterPassword')
+data.setCell(28, 1, 'selectState')
 data.setCell(28, 2, 'tests.BagistoStepByStepTest')
-data.setCell(28, 3, 120);
+data.setCell(28, 3, 112);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'enterAddressEmail')
+data.setCell(29, 1, 'enterAddressFirstName')
 data.setCell(29, 2, 'tests.BagistoStepByStepTest')
-data.setCell(29, 3, 115);
+data.setCell(29, 3, 109);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'enterAddressFirstName')
+data.setCell(30, 1, 'enterCity')
 data.setCell(30, 2, 'tests.BagistoStepByStepTest')
-data.setCell(30, 3, 109);
+data.setCell(30, 3, 107);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'selectState')
+data.setCell(31, 1, 'enterCustomerEmail')
 data.setCell(31, 2, 'tests.BagistoStepByStepTest')
 data.setCell(31, 3, 102);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'enterCity')
+data.setCell(32, 1, 'enterPhone')
 data.setCell(32, 2, 'tests.BagistoStepByStepTest')
-data.setCell(32, 3, 99);
+data.setCell(32, 3, 100);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'enterCustomerEmail')
+data.setCell(33, 1, 'enterPostCode')
 data.setCell(33, 2, 'tests.BagistoStepByStepTest')
-data.setCell(33, 3, 98);
+data.setCell(33, 3, 94);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'enterStreetAddress')
+data.setCell(34, 1, 'enterAddressLastName')
 data.setCell(34, 2, 'tests.BagistoStepByStepTest')
-data.setCell(34, 3, 91);
+data.setCell(34, 3, 92);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'clickSignIn')
+data.setCell(35, 1, 'enterLastName')
 data.setCell(35, 2, 'tests.BagistoStepByStepTest')
 data.setCell(35, 3, 91);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'enterLastName')
+data.setCell(36, 1, 'waitForDeleteIcon')
 data.setCell(36, 2, 'tests.BagistoStepByStepTest')
-data.setCell(36, 3, 87);
+data.setCell(36, 3, 64);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'enterPostCode')
+data.setCell(37, 1, 'openCalendar')
 data.setCell(37, 2, 'tests.BagistoStepByStepTest')
-data.setCell(37, 3, 83);
+data.setCell(37, 3, 59);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'enterEmail')
-data.setCell(38, 2, 'tests.RegExcel')
-data.setCell(38, 3, 82);
+data.setCell(38, 1, 'clickCustomersDiv')
+data.setCell(38, 2, 'tests.BagistoStepByStepTest')
+data.setCell(38, 3, 49);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'enterAddressLastName')
+data.setCell(39, 1, 'waitForSearchResults')
 data.setCell(39, 2, 'tests.BagistoStepByStepTest')
-data.setCell(39, 3, 81);
-data.setCell(40, 0, 40)
-data.setCell(40, 1, 'enterPhone')
-data.setCell(40, 2, 'tests.BagistoStepByStepTest')
-data.setCell(40, 3, 80);
-data.setCell(41, 0, 41)
-data.setCell(41, 1, 'enterPassword')
-data.setCell(41, 2, 'tests.RegExcel')
-data.setCell(41, 3, 68);
-data.setCell(42, 0, 42)
-data.setCell(42, 1, 'enterConfirmPassword')
-data.setCell(42, 2, 'tests.RegExcel')
-data.setCell(42, 3, 67);
-data.setCell(43, 0, 43)
-data.setCell(43, 1, 'enterLastName')
-data.setCell(43, 2, 'tests.RegExcel')
-data.setCell(43, 3, 62);
-data.setCell(44, 0, 44)
-data.setCell(44, 1, 'openCalendar')
-data.setCell(44, 2, 'tests.BagistoStepByStepTest')
-data.setCell(44, 3, 55);
-data.setCell(45, 0, 45)
-data.setCell(45, 1, 'waitForDeleteIcon')
-data.setCell(45, 2, 'tests.BagistoStepByStepTest')
-data.setCell(45, 3, 53);
-data.setCell(46, 0, 46)
-data.setCell(46, 1, 'clickCustomersDiv')
-data.setCell(46, 2, 'tests.BagistoStepByStepTest')
-data.setCell(46, 3, 51);
-data.setCell(47, 0, 47)
-data.setCell(47, 1, 'waitForSearchResults')
-data.setCell(47, 2, 'tests.BagistoStepByStepTest')
-data.setCell(47, 3, 30);
+data.setCell(39, 3, 22);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 54 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -991,218 +891,511 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.BagistoStepByStepTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">246 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.openAdminPanel())</span>
+                <span class="method-start">2626 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">openAdminPanel</span>
-                <span class="method-start">2081 ms</span>
+                <span class="method-start">2634 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=openAdminPanel status=SUCCESS method=BagistoStepByStepTest.openAdminPanel()[pri:1, ...)</span>
+                <span class="method-start">4482 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterEmail())</span>
+                <span class="method-start">4487 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterEmail</span>
-                <span class="method-start">4310 ms</span>
+                <span class="method-start">4487 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterEmail status=SUCCESS method=BagistoStepByStepTest.enterEmail()[pri:2, instance...)</span>
+                <span class="method-start">4635 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterPassword())</span>
+                <span class="method-start">4636 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterPassword</span>
-                <span class="method-start">4475 ms</span>
+                <span class="method-start">4636 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterPassword status=SUCCESS method=BagistoStepByStepTest.enterPassword()[pri:3, in...)</span>
+                <span class="method-start">4758 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">clickSignIn</span>
-                <span class="method-start">4597 ms</span>
+                <span class="method-start">4759 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickSignIn())</span>
+                <span class="method-start">4759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickSignIn status=SUCCESS method=BagistoStepByStepTest.clickSignIn()[pri:4, instan...)</span>
+                <span class="method-start">7313 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enableDarkMode</span>
-                <span class="method-start">4691 ms</span>
+                <span class="method-start">7315 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enableDarkMode())</span>
+                <span class="method-start">7315 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enableDarkMode status=SUCCESS method=BagistoStepByStepTest.enableDarkMode()[pri:5, ...)</span>
+                <span class="method-start">7435 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.openCalendar())</span>
+                <span class="method-start">7436 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">openCalendar</span>
-                <span class="method-start">7009 ms</span>
+                <span class="method-start">7437 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=openCalendar status=SUCCESS method=BagistoStepByStepTest.openCalendar()[pri:6, inst...)</span>
+                <span class="method-start">7497 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.selectToday())</span>
+                <span class="method-start">7498 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectToday</span>
-                <span class="method-start">7074 ms</span>
+                <span class="method-start">7499 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=selectToday status=SUCCESS method=BagistoStepByStepTest.selectToday()[pri:7, instan...)</span>
+                <span class="method-start">7630 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">openNotifications</span>
-                <span class="method-start">7196 ms</span>
+                <span class="method-start">7633 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.openNotifications())</span>
+                <span class="method-start">7633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=openNotifications status=SUCCESS method=BagistoStepByStepTest.openNotifications()[p...)</span>
+                <span class="method-start">7786 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickViewAllNotifications())</span>
+                <span class="method-start">7788 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickViewAllNotifications</span>
-                <span class="method-start">7350 ms</span>
+                <span class="method-start">7789 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickViewAllNotifications status=SUCCESS method=BagistoStepByStepTest.clickViewAllN...)</span>
+                <span class="method-start">9870 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.searchCustomer() throws java.lang.InterruptedException)</span>
+                <span class="method-start">9871 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchCustomer</span>
-                <span class="method-start">9544 ms</span>
+                <span class="method-start">9871 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=searchCustomer status=SUCCESS method=BagistoStepByStepTest.searchCustomer()[pri:10,...)</span>
+                <span class="method-start">12986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickCustomersDiv())</span>
+                <span class="method-start">12987 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickCustomersDiv</span>
-                <span class="method-start">12658 ms</span>
+                <span class="method-start">12987 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickCustomersDiv status=SUCCESS method=BagistoStepByStepTest.clickCustomersDiv()[p...)</span>
+                <span class="method-start">13038 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.waitForSearchResults())</span>
+                <span class="method-start">13039 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">waitForSearchResults</span>
-                <span class="method-start">12709 ms</span>
+                <span class="method-start">13040 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=waitForSearchResults status=SUCCESS method=BagistoStepByStepTest.waitForSearchResul...)</span>
+                <span class="method-start">13065 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickFirstSearchResult())</span>
+                <span class="method-start">13067 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickFirstSearchResult</span>
-                <span class="method-start">12740 ms</span>
+                <span class="method-start">13067 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickFirstSearchResult status=SUCCESS method=BagistoStepByStepTest.clickFirstSearch...)</span>
+                <span class="method-start">15430 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">waitForDeleteIcon</span>
-                <span class="method-start">15080 ms</span>
+                <span class="method-start">15432 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.waitForDeleteIcon())</span>
+                <span class="method-start">15432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=waitForDeleteIcon status=SUCCESS method=BagistoStepByStepTest.waitForDeleteIcon()[p...)</span>
+                <span class="method-start">15497 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickDeleteIcon())</span>
+                <span class="method-start">15498 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickDeleteIcon</span>
-                <span class="method-start">15135 ms</span>
+                <span class="method-start">15499 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickDeleteIcon status=SUCCESS method=BagistoStepByStepTest.clickDeleteIcon()[pri:1...)</span>
+                <span class="method-start">15633 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.waitForAgreeBtn())</span>
+                <span class="method-start">15634 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">waitForAgreeBtn</span>
-                <span class="method-start">15259 ms</span>
+                <span class="method-start">15638 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=waitForAgreeBtn status=SUCCESS method=BagistoStepByStepTest.waitForAgreeBtn()[pri:1...)</span>
+                <span class="method-start">16206 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickAgreeBtn())</span>
+                <span class="method-start">16208 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickAgreeBtn</span>
-                <span class="method-start">15824 ms</span>
+                <span class="method-start">16208 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickAgreeBtn status=SUCCESS method=BagistoStepByStepTest.clickAgreeBtn()[pri:17, i...)</span>
+                <span class="method-start">18390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.goToCustomersMenu())</span>
+                <span class="method-start">18391 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToCustomersMenu</span>
-                <span class="method-start">17954 ms</span>
+                <span class="method-start">18391 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=goToCustomersMenu status=SUCCESS method=BagistoStepByStepTest.goToCustomersMenu()[p...)</span>
+                <span class="method-start">20132 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickCustomersSubMenu())</span>
+                <span class="method-start">20133 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickCustomersSubMenu</span>
-                <span class="method-start">19700 ms</span>
+                <span class="method-start">20133 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickCustomersSubMenu status=SUCCESS method=BagistoStepByStepTest.clickCustomersSub...)</span>
+                <span class="method-start">21887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickCreateCustomerBtn())</span>
+                <span class="method-start">21888 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickCreateCustomerBtn</span>
-                <span class="method-start">21458 ms</span>
+                <span class="method-start">21888 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickCreateCustomerBtn status=SUCCESS method=BagistoStepByStepTest.clickCreateCusto...)</span>
+                <span class="method-start">22017 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterFirstName</span>
-                <span class="method-start">21580 ms</span>
+                <span class="method-start">22019 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterFirstName())</span>
+                <span class="method-start">22019 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterFirstName status=SUCCESS method=BagistoStepByStepTest.enterFirstName()[pri:21,...)</span>
+                <span class="method-start">22632 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterLastName())</span>
+                <span class="method-start">22633 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterLastName</span>
-                <span class="method-start">22206 ms</span>
+                <span class="method-start">22635 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterLastName status=SUCCESS method=BagistoStepByStepTest.enterLastName()[pri:22, i...)</span>
+                <span class="method-start">22727 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterCustomerEmail())</span>
+                <span class="method-start">22728 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterCustomerEmail</span>
-                <span class="method-start">22300 ms</span>
+                <span class="method-start">22729 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterCustomerEmail status=SUCCESS method=BagistoStepByStepTest.enterCustomerEmail()...)</span>
+                <span class="method-start">22832 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">selectGender</span>
-                <span class="method-start">22399 ms</span>
+                <span class="method-start">22834 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.selectGender())</span>
+                <span class="method-start">22834 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=selectGender status=SUCCESS method=BagistoStepByStepTest.selectGender()[pri:24, ins...)</span>
+                <span class="method-start">22966 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickSaveCustomerBtn() throws java.lang.InterruptedException)</span>
+                <span class="method-start">22967 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickSaveCustomerBtn</span>
-                <span class="method-start">22525 ms</span>
+                <span class="method-start">22968 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickSaveCustomerBtn status=SUCCESS method=BagistoStepByStepTest.clickSaveCustomerB...)</span>
+                <span class="method-start">27085 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickNewCustomerLogin())</span>
+                <span class="method-start">27087 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickNewCustomerLogin</span>
-                <span class="method-start">26631 ms</span>
+                <span class="method-start">27088 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickNewCustomerLogin status=SUCCESS method=BagistoStepByStepTest.clickNewCustomerL...)</span>
+                <span class="method-start">27210 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickAddress())</span>
+                <span class="method-start">27213 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickAddress</span>
-                <span class="method-start">26781 ms</span>
+                <span class="method-start">27213 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickAddAddressBtn())</span>
+                <span class="method-start">31396 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickAddress status=SUCCESS method=BagistoStepByStepTest.clickAddress()[pri:27, ins...)</span>
+                <span class="method-start">31396 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">clickAddAddressBtn</span>
-                <span class="method-start">31017 ms</span>
+                <span class="method-start">31398 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickAddAddressBtn status=SUCCESS method=BagistoStepByStepTest.clickAddAddressBtn()...)</span>
+                <span class="method-start">33374 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterAddressFirstName())</span>
+                <span class="method-start">33375 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterAddressFirstName</span>
-                <span class="method-start">32960 ms</span>
+                <span class="method-start">33375 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterAddressLastName())</span>
+                <span class="method-start">33487 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterAddressFirstName status=SUCCESS method=BagistoStepByStepTest.enterAddressFirst...)</span>
+                <span class="method-start">33487 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterAddressLastName</span>
-                <span class="method-start">33070 ms</span>
+                <span class="method-start">33488 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterAddressLastName status=SUCCESS method=BagistoStepByStepTest.enterAddressLastNa...)</span>
+                <span class="method-start">33582 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterAddressEmail</span>
-                <span class="method-start">33151 ms</span>
+                <span class="method-start">33583 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterAddressEmail())</span>
+                <span class="method-start">33583 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterAddressEmail status=SUCCESS method=BagistoStepByStepTest.enterAddressEmail()[p...)</span>
+                <span class="method-start">33705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterStreetAddress())</span>
+                <span class="method-start">33707 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterStreetAddress</span>
-                <span class="method-start">33270 ms</span>
+                <span class="method-start">33707 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterStreetAddress status=SUCCESS method=BagistoStepByStepTest.enterStreetAddress()...)</span>
+                <span class="method-start">33827 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.selectCountry())</span>
+                <span class="method-start">33827 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectCountry</span>
-                <span class="method-start">33361 ms</span>
+                <span class="method-start">33829 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=selectCountry status=SUCCESS method=BagistoStepByStepTest.selectCountry()[pri:33, i...)</span>
+                <span class="method-start">33964 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.selectState())</span>
+                <span class="method-start">33966 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectState</span>
-                <span class="method-start">33493 ms</span>
+                <span class="method-start">33967 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=selectState status=SUCCESS method=BagistoStepByStepTest.selectState()[pri:34, insta...)</span>
+                <span class="method-start">34080 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterCity())</span>
+                <span class="method-start">34081 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterCity</span>
-                <span class="method-start">33595 ms</span>
+                <span class="method-start">34081 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterCity status=SUCCESS method=BagistoStepByStepTest.enterCity()[pri:35, instance:...)</span>
+                <span class="method-start">34188 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterPostCode())</span>
+                <span class="method-start">34190 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterPostCode</span>
-                <span class="method-start">33695 ms</span>
+                <span class="method-start">34190 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterPostCode status=SUCCESS method=BagistoStepByStepTest.enterPostCode()[pri:36, i...)</span>
+                <span class="method-start">34286 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.enterPhone())</span>
+                <span class="method-start">34287 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterPhone</span>
-                <span class="method-start">33781 ms</span>
+                <span class="method-start">34288 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=enterPhone status=SUCCESS method=BagistoStepByStepTest.enterPhone()[pri:37, instanc...)</span>
+                <span class="method-start">34389 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void tests.BagistoStepByStepTest.clickSaveAddressBtn())</span>
+                <span class="method-start">34390 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">clickSaveAddressBtn</span>
-                <span class="method-start">33861 ms</span>
+                <span class="method-start">34390 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=clickSaveAddressBtn status=FAILURE method=BagistoStepByStepTest.clickSaveAddressBtn...)</span>
+                <span class="method-start">49409 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36123 ms</span>
+                <span class="method-start">49551 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.RegExcel</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
-                <span class="method-start">36481 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">51059 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">clickUsersIcon(bob, 
+                <span class="method-name">signupTest(bob, 
 Doe, bobby13@example.com , bob123, bob123)</span>
-                <span class="method-start">41619 ms</span>
+                <span class="method-start">55383 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64778 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">64950 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">clickUsersIcon(Alie, dom, Alie1@example.com, alie123, alie123)</span>
-                <span class="method-start">42724 ms</span>
+                <span class="method-name">signupTest(Alie, dom, Alie1@example.com, alie123, alie123)</span>
+                <span class="method-start">68342 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickSignUpLink</span>
-                <span class="method-start">43813 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">enterFirstName</span>
-                <span class="method-start">55504 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">enterLastName</span>
-                <span class="method-start">55742 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">enterEmail</span>
-                <span class="method-start">55804 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">enterPassword</span>
-                <span class="method-start">55888 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">enterConfirmPassword</span>
-                <span class="method-start">55956 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickAgreement</span>
-                <span class="method-start">56028 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickSubmit</span>
-                <span class="method-start">56551 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">62519 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78476 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BagistoStepByStepTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">flushReport</span>
+                <span class="method-start">78710 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
